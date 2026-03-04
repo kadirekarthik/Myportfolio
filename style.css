@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full Screen Video */
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Dark Overlay for Contrast */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.8)
+    );
+    z-index: -1;
+}
+
+/* Center Content */
+.landing-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+.landing-content h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Subtitle */
+.landing-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Button Matching Dark Tech Video */
+.enter-btn {
+    padding: 14px 40px;
+    background: rgba(0, 200, 255, 0.8);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.enter-btn:hover {
+    background: #00c6ff;
+    box-shadow: 0 0 20px #00c6ff;
+    transform: scale(1.1);
+}
+
+/* Click Effect */
+.enter-btn:active {
+    transform: scale(0.95);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Smooth Scroll */
+/* html {
+    scroll-behavior: smooth;
+} */
+
+/* Background Image */
+/* body {
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+        url("pexels-junior-teixeira-1064069-2047905.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;   /* IMPORTANT */
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+        url("pexels-junior-teixeira-1064069-2047905.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.section {
+    min-height: 100vh;
+    padding: 120px 20px;
+}
+ 
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-logo {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff416c;
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    padding: 120px 120px ;
+    text-align: center;
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Home Section Center */
+.home-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;        /* Centers text */
+    padding: 80px 20px;       /* Space around section */
+    min-height: 100vh;
+}
+
+/* Intro Styling */
+.intro h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    
+}
+
+.intro p {
+    font-size: 20px;
+    max-width: 750px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #ff416c;
+}
+
+
+
+
+/* ABOUT SECTION STYLING */
+#about {
+    padding: 80px 20px;
+    text-align: center;          /* Center heading */
+    max-width: 900px;
+    margin: 0 auto;              /* Center section */
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 30px;         /* Space below heading */
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;            /* Makes text readable */
+    margin-bottom: 20px;         /* Space between paragraphs */
+    text-align: justify;         /* Professional paragraph alignment */
+}
+
+
+
+
+
+
+
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+/* Container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;   /* Makes responsive */
+}
+
+/* Card Style */
+.skill-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    width: 450px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-card ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.tech {
+    font-size: 14px;
+    color: #ff416c;
+}
+
+.impact {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT SECTION */
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ff416c; /* Highlight color to match your theme */
+}
+
+/* Contact Form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.08); /* Glassy effect */
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Fields and Textarea */
+#contactForm input,
+#contactForm textarea {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Placeholder color */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus effect */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px #ff416c;
+}
+
+/* Textarea specific */
+#contactForm textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Submit Button */
+#contactForm button {
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background: #ff416c;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    background: #ff758c;
+    box-shadow: 0 0 20px #ff416c;
+    transform: scale(1.05);
+}
+
+#contactForm button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact {
+        padding: 60px 20px;
+    }
+
+    #contactForm {
+        padding: 20px;
+    }
+}
