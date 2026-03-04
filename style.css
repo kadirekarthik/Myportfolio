@@ -874,3 +874,75 @@ html {
         padding: 10px 20px;
     }
 }
+
+
+@media (max-width: 1024px) {
+    /* Tablets: adjust padding and flex */
+    .skills-container, .projects-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-card, .skill-card {
+        width: 90%; /* Shrink cards to fit screen */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile phones */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+    .home-section h1 {
+        font-size: 35px;
+    }
+
+    .home-section p {
+        font-size: 16px;
+    }
+
+    #contactForm {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #contactForm button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small phones */
+    .home-section h1 {
+        font-size: 28px;
+    }
+
+    .home-section p {
+        font-size: 14px;
+    }
+
+    .project-card, .skill-card {
+        width: 95%;
+        padding: 15px;
+    }
+}
