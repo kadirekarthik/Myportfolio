@@ -1065,3 +1065,49 @@ html {
         justify-content: center;
     }
 }
+
+/* ===========================
+   CONTACT SECTION MOBILE FIX
+   =========================== */
+
+@media (max-width: 768px) {
+    #contact {
+        margin-top: 0;       /* ensures contact stays below projects */
+        padding: 80px 20px;  /* space from top and sides */
+        min-height: auto;    /* section grows naturally */
+    }
+
+    #contactForm {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #contactForm button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+    #contact {
+        padding: 60px 15px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    #contactForm button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
